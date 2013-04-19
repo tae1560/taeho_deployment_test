@@ -1,8 +1,11 @@
-require "rvm/capistrano"
 require "bundler/capistrano"
 
 server "soma2.vps.phps.kr", :web, :app, :db, primary: true
-set :rvm_type, :system
+
+set :default_environment, {
+    'PATH' => "/usr/local/bin:/bin:/usr/bin:/bin:~/.rbenv/versions/1.9.3-p327/bin"
+}
+
 set :application, "blog"
 set :user, "tae1560"
 set :deploy_to, "/home/#{user}/apps/#{application}"
