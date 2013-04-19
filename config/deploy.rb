@@ -1,3 +1,4 @@
+require "rvm/capistrano"
 require "bundler/capistrano"
 
 server "soma2.vps.phps.kr", :web, :app, :db, primary: true
