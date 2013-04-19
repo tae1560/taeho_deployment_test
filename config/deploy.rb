@@ -2,7 +2,7 @@ require "rvm/capistrano"
 require "bundler/capistrano"
 
 server "soma2.vps.phps.kr", :web, :app, :db, primary: true
-
+set :rvm_type, :system
 set :application, "blog"
 set :user, "tae1560"
 set :deploy_to, "/home/#{user}/apps/#{application}"
