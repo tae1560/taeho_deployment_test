@@ -13,7 +13,7 @@ set :repository, "https://github.com/tae1560/taeho_deployment_test.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
+ssh_options[:forward_agent] = false
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
