@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422082805) do
+ActiveRecord::Schema.define(:version => 20130422175937) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20130422082805) do
 
   create_table "houses", :force => true do |t|
     t.string   "trade_type"
-    t.string   "type"
+    t.string   "house_type"
     t.datetime "confirm_date"
     t.string   "name"
     t.string   "price"

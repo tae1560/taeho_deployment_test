@@ -1,5 +1,8 @@
 Blog::Application.routes.draw do
   resources :articles
+  resources :cities
+  resources :towns
+  resources :houses
 
 
   # The priority is based upon order of creation:

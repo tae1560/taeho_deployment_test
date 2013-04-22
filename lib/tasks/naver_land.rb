@@ -149,12 +149,15 @@ class NaverLand
             # 날짜가 없는 매물 (직거래)
             if confirm_date_string and confirm_date_string.to_date
               type = house_type
-              confirm_date = Utility.kor_str_to_utc_datetime confirm_date_string
+              confirm_date = Utility.kor_str_to_utc_datetime "20" + confirm_date_string
               name = house_name
               price = house_price
               unless House.duplicate? trade_type, type, confirm_date, name, price
-                house = House.create(:trade_type => trade_type, :type => type, :confirm_date => confirm_date, :name => name, :price => price)
+                house = House.create(:trade_type => trade_type, :house_type => type, :confirm_date => confirm_date, :name => name, :price => price)
                 town.houses << house
+              else
+                house = House.where(:trade_type => trade_type, :house_type => type, :confirm_date => confirm_date, :name => name, :price => price).first
+                house.confirm_date = confirm_date
               end
             end
           end
