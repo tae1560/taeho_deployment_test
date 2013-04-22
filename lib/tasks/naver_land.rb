@@ -13,14 +13,13 @@ require 'open-uri'
 
 class NaverLand
   def self.crawl_naver_land
-
-
     naver_land = self.new
-    naver_land.crawl_city_informations
+    #naver_land.crawl_city_informations
+    naver_land.crawl_town_informations
   end
 
   def crawl_city_informations
-    # ~시 번호 리스트 크롤링
+    # 도/시 번호 리스트 크롤링
 
     # cortarNo : 위치 표기
     cortarNo = 1100000000 # 1100000000 : 서울시
@@ -38,6 +37,33 @@ class NaverLand
       unless City.duplicated? cortarNo
         City.create(:name => name, :cortarNo => cortarNo)
       end
+    end
+  end
+
+  def crawl_town_informations
+    # 시/군/구 번호 리스트 크롤링
+
+    City.find_each do |city|
+      puts "start #{city.name} #{city.cortarNo}"
+
+      # cortarNo : 위치 표기
+      cortarNo = city.cortarNo
+      doc = Nokogiri::XML(
+          open("http://land.naver.com/article/divisionInfo.nhn?cortarNo=#{cortarNo}"), nil,
+          'utf-8')
+
+      loc_view = doc.css("div.loc_view #loc_view2 select")
+
+      loc_view.css("option").each do |option_tag|
+        #@@city_informations[option_tag["value"]] = option_tag.text
+        cortarNo = option_tag["value"]
+        name = option_tag.text
+        unless Town.duplicated? cortarNo
+          town = Town.create(:name => name, :cortarNo => cortarNo)
+          city.towns << town
+        end
+      end
+
     end
 
   end
