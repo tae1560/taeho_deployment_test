@@ -1,21 +1,23 @@
-<h1>Listing towns which belongs to <%= @town.name %></h1>
+<h1>Listing towns which belongs to <%= @town.city.name %> <%= @town.name %></h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>CortarNo</th>
-    <th>매물수</th>
-    <th></th>
+    <th>거래</th>
+    <th>종류</th>
+    <th>확인일자</th>
+    <!--<th></th>-->
   </tr>
 
-  <% @town.houses.each do |house| %>
+  <% @houses.each do |house| %>
       <tr>
         <td><%= house.trade_type %></td>
         <td><%= house.house_type %></td>
         <td><%= Utility.utc_datetime_to_kor_str house.confirm_date %></td>
-        <td><%= link_to 'Show', house %></td>
+        <!--<td><%= link_to 'Show', house %></td>-->
       </tr>
   <% end %>
 </table>
+
+<%= will_paginate @houses %>
 
 <br />
