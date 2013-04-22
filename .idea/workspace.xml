@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="536da024-bfbe-472a-b58f-f33118bd87c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/house.rb" afterPath="$PROJECT_DIR$/app/models/house.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/naver_land.rb" afterPath="$PROJECT_DIR$/lib/tasks/naver_land.rb" />
-    </list>
+    <list default="true" id="536da024-bfbe-472a-b58f-f33118bd87c1" name="Default" comment="" />
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,15 +28,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="313" selection-end="349" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/cities/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,10 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/towns/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="66" selection-start="350" selection-end="350" vertical-scroll-proportion="0.36713287">
+            <state line="14" column="66" selection-start="350" selection-end="350" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.22651006">
               <folding />
             </state>
           </provider>
@@ -759,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="4" selection-start="313" selection-end="349" vertical-scroll-proportion="0.0">
@@ -831,7 +818,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/towns/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="66" selection-start="350" selection-end="350" vertical-scroll-proportion="0.36713287">
+        <state line="14" column="66" selection-start="350" selection-end="350" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.22651006">
           <folding />
         </state>
       </provider>

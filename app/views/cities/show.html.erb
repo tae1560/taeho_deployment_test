@@ -1,0 +1,21 @@
+<h1>Listing towns which belongs to <%= @city.name %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>CortarNo</th>
+    <th>매물수</th>
+    <th></th>
+  </tr>
+
+  <% @city.towns.each do |town| %>
+      <tr>
+        <td><%= @city.name %> <%= town.name %></td>
+        <td><%= town.cortarNo %></td>
+        <td><%= town.houses.count %></td>
+        <td><%= link_to 'Show', town %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br />

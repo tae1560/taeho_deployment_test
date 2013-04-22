@@ -1,0 +1,26 @@
+<h1>Listing cities</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>CortarNo</th>
+    <th>매물수</th>
+    <th></th>
+  </tr>
+
+<% @cities.each do |city| %>
+  <tr>
+    <td><%= city.name %></td>
+    <td><%= city.cortarNo %></td>
+    <%
+       sum_of_houses = 0
+       city.towns.each do |town|
+         sum_of_houses += town.houses.count
+       end
+    %>
+    <td><%= sum_of_houses %></td>
+    <td><%= link_to 'Show', city %></td>
+  </tr>
+<% end %>
+</table>
+<br />
