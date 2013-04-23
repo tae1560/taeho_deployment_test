@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="536da024-bfbe-472a-b58f-f33118bd87c1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/towns/show.html.erb" afterPath="$PROJECT_DIR$/app/views/towns/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/naver_land.rb" afterPath="$PROJECT_DIR$/lib/tasks/naver_land.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cities/index.html.erb" afterPath="$PROJECT_DIR$/app/views/cities/index.html.erb" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +34,17 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/cities/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+            <state line="5" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/towns/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1366658384000" expanded="true" signature="89:462" placeholder="..." />
-                <marker date="1366658384000" expanded="true" signature="96:175" placeholder="..." />
-                <marker date="1366658384000" expanded="true" signature="219:441" placeholder="..." />
-              </folding>
+            <state line="15" column="52" selection-start="430" selection-end="430" vertical-scroll-proportion="0.625">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="naver_land.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="naver_land.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/naver_land.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="97" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.44474393">
+            <state line="8" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +132,6 @@
         <option value="$PROJECT_DIR$/app/models/city.rb" />
         <option value="$PROJECT_DIR$/app/controllers/houses_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/cities/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/cities_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/house.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130422175937_rename_house_type.rb" />
@@ -146,6 +140,7 @@
         <option value="$PROJECT_DIR$/app/views/towns/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/towns_controller.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/naver_land.rb" />
+        <option value="$PROJECT_DIR$/app/views/cities/index.html.erb" />
       </list>
     </option>
   </component>
@@ -777,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cities/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/cities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
@@ -805,17 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/towns/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1366658384000" expanded="true" signature="89:462" placeholder="..." />
-            <marker date="1366658384000" expanded="true" signature="96:175" placeholder="..." />
-            <marker date="1366658384000" expanded="true" signature="219:441" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/towns_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="3" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
@@ -825,7 +802,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/naver_land.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="97" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.44474393">
+        <state line="8" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cities/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/towns/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="52" selection-start="430" selection-end="430" vertical-scroll-proportion="0.625">
           <folding />
         </state>
       </provider>
