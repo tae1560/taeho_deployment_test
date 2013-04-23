@@ -112,7 +112,10 @@ class NaverLand
 
             # 확인일자
             #puts tr.css("td")[2].css("div.inner")[0].css("span")[0].text.strip
-            confirm_date_string = tr.css("td")[2].css("div.inner")[0].css("span")[0].text.strip
+            if tr.css("td")[2].css("div.inner")[0]
+              confirm_date_string = tr.css("td")[2].css("div.inner")[0].css("span")[0].text.strip
+            end
+
 
             # 매물명
             #puts tr.css("td")[3 + is_thumbnail_exists].css("div.inner")[0].css("a")[0]["title"]
